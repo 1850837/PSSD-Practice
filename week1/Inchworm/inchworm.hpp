@@ -1,7 +1,7 @@
 #ifndef INCHWORM_HPP
 #define INCHWORM_HPP
 
-#include <cmath>
+//#include <cmath>
 using namespace std;
 
 class Inchworm

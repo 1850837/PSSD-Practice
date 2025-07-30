@@ -1,0 +1,8 @@
+Week 1 Wednesday 30/7/25
+Inchworm
+
+There is a pattern here, if the current position of the worm / leaf length is whole, the leaf gets eaten. Planning on using a for-loop to check this.
+Afterwards, this worked with all the supplied test cases, except that I had the loop end one element early and thus didn't include the final leaf if that was eaten.
+Planning is already working better than it has been with my previous code! That said, I'm a bit rusty and enjoying the practice. I've also never used a .hpp file,
+but I now know how to deal with that.
+
