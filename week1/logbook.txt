@@ -6,3 +6,30 @@ Afterwards, this worked with all the supplied test cases, except that I had the 
 Planning is already working better than it has been with my previous code! That said, I'm a bit rusty and enjoying the practice. I've also never used a .hpp file,
 but I now know how to deal with that.
 
+ThrowTheBall
+
+I don't think there's a mathematical way to do it outside of just making an array for the length of the players. Then each element will store how many times they
+have held the ball, and we can use that for p. We will start at player 1. Every pass there should be a check in case the addition goes above or below the player
+numbers. Whenever a player gets the ball, there should be some check for whether the game ends, and also an increasing counter. I think this could be done with a 
+while-loop whose condition is that the element in the current array is less than M. Except maybe that wouldn't work depending on when the change is or when the 
+check is. Maybe a break statement is needed? Hmm hmm hmm.
+A while loop where each loop:
+    - we check the value inside the current player's element
+    - if it's even we add values
+    - if it's odd we subtract values
+    - if the value is outside of our range, we add or subtract N
+    - Then we add one to that player's value
+    - we add one to the count
+
+Turns out I slightly misunderstood where the ball goes because the first example confused me a little bit. But we figured it out and I got there. I also had forgotten
+how vectors worked lol.
+
+SquareOfDigits
+
+I'm feeling quite tired and I'm struggling to work out the algorithm that I'm using in my head.
+I suppose for each element, you would need to check if there was another element of that same number in the row it's in. So if you had a 2 in the top-left corner,
+you could see if there were any other 2's in that row. Perhaps this count could be done with a vector where each element represents the number of times its identifier
+appeared in that row? And then if it's more than once, you could then check its other two corners which must exist in specific corners based on the distance between
+them. I'd need to be careful about how to handle more than 2 elements being there in one row, hmm. Sadly I think this is a case of checking each square? Although
+with the difference between the two elements in the top row, you wouldn't need to do the full calculation to know if it's possibly larger than any square previously
+found. Hmm hmm hmm.
