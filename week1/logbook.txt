@@ -37,6 +37,7 @@ found. Hmm hmm hmm.
 Week 1 Friday 1/8/25
 
 Still SquareOfDigits
+
 I've just finished the SquareOfDigits problem and it took me much longer than I wanted it to. The primary problem I had was that my thinking in creating an 
 algorithm for this revolved around there being a max of 2 elements of the same number per row. I was counting up the values in each row, finding the size of 
 the side created by those two elements, and comparing the four corners because of that. This meant that my problem worked fine for any of the test cases given,
@@ -45,3 +46,10 @@ made, trying to adapt it rather than stepping back and thinking practically. I r
 O(n^2) not O(n^3) as I had feared, time-wise), which meant I ignored the best solution: comparing each element with each other element. I did use AI to help me
 here, which I am a little bit ashamed of, but ultimately it wasn't the programming that stopped me, but the ability to accept that my original solution may be
 wrong or unsuitable.
+
+DownloadingFiles
+
+This one I aced. It did take about an hour and a half, sadly, but I made a plan, stuck to it, and it worked. There were definitely things that needed fixing,
+but my bugs were all easily found and calculation errors. I was disappointed how much I had struggled with SquareOfDigits, so I had a look at the hardest question
+I could do right now, but it was so much easier!? I'm not sure if I was just better suited to this type of question or what, but regardless I'm happy. Still need
+to work faster, but I think that can be forgiven at 11:30pm.
