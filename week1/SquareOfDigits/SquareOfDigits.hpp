@@ -49,12 +49,13 @@ class SquareOfDigits{
 
             for (int j = 0; j < 10; j++){                   //checking each number
                 if (counts[j] > 1){                         //if there are two numbers of the same type in a row
-                    
+
                 }
             }
         }
         
     }
+    return max;
 };
 
 #endif
