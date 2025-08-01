@@ -33,3 +33,15 @@ appeared in that row? And then if it's more than once, you could then check its 
 them. I'd need to be careful about how to handle more than 2 elements being there in one row, hmm. Sadly I think this is a case of checking each square? Although
 with the difference between the two elements in the top row, you wouldn't need to do the full calculation to know if it's possibly larger than any square previously
 found. Hmm hmm hmm.
+
+Week 1 Friday 1/8/25
+
+Still SquareOfDigits
+I've just finished the SquareOfDigits problem and it took me much longer than I wanted it to. The primary problem I had was that my thinking in creating an 
+algorithm for this revolved around there being a max of 2 elements of the same number per row. I was counting up the values in each row, finding the size of 
+the side created by those two elements, and comparing the four corners because of that. This meant that my problem worked fine for any of the test cases given,
+but not for anything with 3 or more identical values. Ultimately I need to read the problem better. I also really struggled getting away from the logic I had 
+made, trying to adapt it rather than stepping back and thinking practically. I really didn't want to have three for-loops (although I believe it's still only
+O(n^2) not O(n^3) as I had feared, time-wise), which meant I ignored the best solution: comparing each element with each other element. I did use AI to help me
+here, which I am a little bit ashamed of, but ultimately it wasn't the programming that stopped me, but the ability to accept that my original solution may be
+wrong or unsuitable.
