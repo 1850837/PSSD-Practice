@@ -53,9 +53,8 @@ class SquareOfDigits{
                 }
             }
         }
-        
+        return max;   
     }
-    return max;
 };
 
 #endif
