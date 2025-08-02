@@ -53,3 +53,15 @@ This one I aced. It did take about an hour and a half, sadly, but I made a plan,
 but my bugs were all easily found and calculation errors. I was disappointed how much I had struggled with SquareOfDigits, so I had a look at the hardest question
 I could do right now, but it was so much easier!? I'm not sure if I was just better suited to this type of question or what, but regardless I'm happy. Still need
 to work faster, but I think that can be forgiven at 11:30pm.
+
+Week 1 Saturday 2/8/25
+
+StreetParking
+
+I've had a hard week, so given that I did a 3 star problem, I decided to just do a quick easy one at the end. I've passed all the tests that I was given but 
+haven't submitted yet, so who knows! Maybe I haven't passed. But, I'm pretty happy with this one. That said, I once again find that I'm not planning to the 
+right level. In this question, I planned four rough if-statements to match the 7 conditions required, but I didn't consider the way I would actually implement
+things where I accessed an element that may not exist, without doing just that. My instinct was to have an or statement where I would have something like, 
+if (i + 1 < array.length() || array[i + 1] == '-'), with the actual correct conditions, but the issue with that was that it still attempts to find that element.
+Due to it being late at night, this did give me pause. Not exactly stumping me, but just putting a road-block in my way I didn't have the mental energy to get 
+past. Interesting, that feeling. I will consider it more. Regardless, we got there such that those elements were never accessed (god bless if-else statements).
