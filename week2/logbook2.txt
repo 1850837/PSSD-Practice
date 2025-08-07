@@ -12,3 +12,11 @@ This one stumped me for a bit until I looked at the long example and tried to do
 reds there were. When reading the description I was getting very bogged down in the idea of counting to the end, including the starting section after it had 
 been placed at the end, but of course due to the constraints that's unnecessary. It will always work that there is somewhere to cut it. So let's see if my plan
 works.
+It did work!! I'm very pleased with how my problem solving is going.
+
+AlternateColors
+
+I wanted to do a 3-star problem, but I had a look at them and decided I don't have the wherewithall tonight. I can't tell if the 2-star ones are just really 
+easy and the jump is really big, or if I chose a really hard 3-star problem to think about. Regardless, I'll definitely do a 3-star problem this week.
+For now though, this one I think is just about splitting the number of balls destroyed into the segments of "all three colours", "two colours" and "one colour",
+and then finding the remainder to determine which colour is right. Let's see if I'm right! From two test cases, it seems to work, but that's on paper.
