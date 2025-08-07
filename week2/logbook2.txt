@@ -4,3 +4,11 @@ I'm a bit frustrated only starting on these questions now, but better late than 
 I've got what I think is a solid plan for this question. We're looking for a and b such that n = 6a + 8b, and a + b is at minimum. The minimum will always 
 occur with the maximum available 8-egg cartons (I thiiiiink), so I'm going to assign a = 0 and find the appropriate b. Then increment a until either I find an 
 answer, or 6a > n. I'm also going to put in specific cases for n being odd and for n < 6. Let's see!
+And I was correct. I had some trouble ensuring my b calculation was right, but it all worked out.
+
+BlackAndRed
+
+This one stumped me for a bit until I looked at the long example and tried to do it in my head. I realised I was basically just keeping track of how many 
+reds there were. When reading the description I was getting very bogged down in the idea of counting to the end, including the starting section after it had 
+been placed at the end, but of course due to the constraints that's unnecessary. It will always work that there is somewhere to cut it. So let's see if my plan
+works.
