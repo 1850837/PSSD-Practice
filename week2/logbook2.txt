@@ -28,3 +28,21 @@ Still AlternateColors
 I need to be more careful in my calculating of numbers. I spent too long struggling through that for what turned out to be two numbers needing to be swapped.
 Alas. More problems now.
 
+DerivativeSequence
+
+I have a plan for this one, but I'm worried I haven't thought it through enough for multiple levels. I'm going to implement it and make sure it works for n=1,
+and then see about afterwards. I think it's solid though? I'm a bit distracted and tired from some life stuff, so I'm worried I'm missing something obvious.
+
+Yippee! It worked! I had a little trouble with a strange seg fault, but turns out in my second for-loop, I had (j=0; i < ___; j++), so that i was causing an 
+issue. All worked out and fixed now! One more problem.
+
+I'm going to choose another 2-star one. I know we need to challenge ourselves, but if a person reads this, I need it to be known that my dog is having emergency 
+surgery this week, and I've just moved house and am managing a lot to do with that, and I've got no family support. These things will all ease and I will have 
+time to do more stuff, but just right now things are very full on. And besides, I'm still learning a lot and refreshing my skills with 2-star problems. But I 
+promise I'm not doing this out of lack of care for the spirit of the class and for learning. I intend on becoming an extremely good programmer.
+
+PartySeats
+
+For this one I wish I had access to what I did in the prac exam, but that's fine. I've got a plan that involves making arrays of the girls and boys, checking
+the lengths of the arrays, and then creating a nice little results array.
+And I believe that's right! I missed a bit about having the people in alphabetical order, but I beleive that I've finished it. Submission time!!
