@@ -20,3 +20,11 @@ I wanted to do a 3-star problem, but I had a look at them and decided I don't ha
 easy and the jump is really big, or if I chose a really hard 3-star problem to think about. Regardless, I'll definitely do a 3-star problem this week.
 For now though, this one I think is just about splitting the number of balls destroyed into the segments of "all three colours", "two colours" and "one colour",
 and then finding the remainder to determine which colour is right. Let's see if I'm right! From two test cases, it seems to work, but that's on paper.
+
+Week 2 Sunday
+
+Still AlternateColors
+
+I need to be more careful in my calculating of numbers. I spent too long struggling through that for what turned out to be two numbers needing to be swapped.
+Alas. More problems now.
+

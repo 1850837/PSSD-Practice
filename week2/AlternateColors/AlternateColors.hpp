@@ -15,21 +15,25 @@ class AlternateColors{
         vector<long> list = {r, g, b};
         sort(list.begin(), list.end());
 
+        vector<long> listOriginal = {r, g, b};
+        sort(listOriginal.begin(), listOriginal.end());
+
         long remaining = k;
         
         string longest;
         if (list[2] == r){
-            longest == "RED";
+            longest = "RED";
         }
         if (list[2] == g){
-            longest == "GREEN";
+            longest = "GREEN";
         }
         if (list[2] == b){
-            longest == "BLUE";
+            longest = "BLUE";
         }
 
         //if in section 1
-        if (k <= 3 * list[0]){
+
+        if (k <= (3 * list[0])){
             if (k % 3 == 1){
                 return "RED";
             }
@@ -37,6 +41,7 @@ class AlternateColors{
                 return "GREEN";
             }
             if (k % 3 == 0){
+                cout << "Here1\n";
                 return "BLUE";
             }
         }
@@ -48,32 +53,32 @@ class AlternateColors{
         remaining = remaining - (3 * list[0]);
         list[0] = 0;
 
-        if (k <= 2 * list[1]){
+        if (remaining <= 2 * list[1]){
             //if red was taken out
-            if (list[0] == r){
-                if (k % 2 == 0){
+            if (list[0] == (r - listOriginal[0])){
+                if (remaining % 2 == 1){
                     return "GREEN";
                 }
-                if (k % 2 == 1){
+                if (remaining % 2 == 0){
                     return "BLUE";
                 }
             }
             //if green was taken out
-            else if (list[0] == g){
-                if (k % 2 == 0){
+            else if (list[0] == (g - listOriginal[0])){
+                if (remaining % 2 == 0){
                     return "BLUE";
                 }
-                if (k % 2 == 1){
+                if (remaining % 2 == 1){
                     return "RED";
                 }
             }
             //if blue was taken out
-            else if (list[0] == b){
-                if (k % 2 == 0){
-                    return "RED";
-                }
-                if (k % 2 == 1){
+            else if (list[0] == (b - listOriginal[0])){
+                if (remaining % 2 == 0){
                     return "GREEN";
+                }
+                if (remaining % 2 == 1){
+                    return "RED";
                 }
             }
         }
