@@ -1,0 +1,13 @@
+Week 3 Thursday
+
+QuickSums
+
+It's a busy week but I'm trying my hand at QuickSums. I want those bonus points, damn it, and I think I have a good plan? I'm a little bit overwhelmed so I
+don't know if I'll finish the question, but I've figured out part of the question at least. Originally, I was viewing it where, for 'numbers' of length n, there
+were n-1 choices to be made. Each choice would then be whether to have a plus or not. But if I, rather than having each recursion round be those n-1 choices,
+have each round just be a single choice of plus or no-plus, and then have n-1 rounds, it'll be waaaay easier. I'm really not great at recursion, so I'm hoping
+I can keep my cool when that sort of thing comes up in prac exams.
+
+That took hours, because I'm exhausted, but I did it!! Stringstreams are weird but my plan worked and I'm so happy. Perhaps this week I'll be able to finish
+up the christmas tree problem.
+
