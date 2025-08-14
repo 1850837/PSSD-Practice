@@ -11,3 +11,17 @@ I can keep my cool when that sort of thing comes up in prac exams.
 That took hours, because I'm exhausted, but I did it!! Stringstreams are weird but my plan worked and I'm so happy. Perhaps this week I'll be able to finish
 up the christmas tree problem.
 
+StrangeComputer
+
+I have to leave in 45 minutes so I'm going to try and get this 2-star problem done. I think I have a plan, and it seems right to me, but I don't know if I have
+enough examples to be sure. We shall see.
+
+I think we might have it! Time to submit, that was 13 minutes I believe. I made some silly errors where I was comparing mem[0] with the int 0 rather than char 
+'0', but I sorted it and figured it out quickly.
+
+ChristmasTree
+
+This is a problem I looked at earlier and could not for the life of me work out how to tackle. But from both the lecture and working on QuickSums, I realised
+I had overcomplicated it entirely. What I actually need to do is just take it a single choice at a time, and call the function only for the next bauble, not
+the next row or next tree within the tree. I haven't written it up yet, but I have the plan in my notebook with the base cases (reaching n or having an invalid
+row), so fingers crossed this works. I plan on finishing this assignment up tonight (it has been a good few hours since StrangeComputer).
