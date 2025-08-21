@@ -11,3 +11,34 @@ breeze through this.
 
 It worked! The only issue was that I had the total party dread as an int, not a long, which meant eventaully they were negative values which mucked up all the
 arithmetic. But we got there with no fuss at ALL, goodness me!!
+
+UnsealTheSafe
+
+I am almost CERTAIN there is a better way to do this, but here is my way lmao. I will do it recursively. Initially there will be a call for each of 10 possible
+starting digits (0-9), and then depending on what digit was called, we will then do a recursive call between 1-4 other times for the next possible digits. Each 
+call will increase the global variable counter by 1, and the base case will be when N is hit. I'm definitely worried about gradescope not being able to grade this
+but given that they're expecting a long, I'm hoping it's going to be fine. Let's seeee.
+
+So, I overcooked the hell out of that one. Recursion with a long (not int) amount of stack frames, yeahhh nooo. That was a stupid idea. I also noticed that since
+N can only be 30, there are exactly 30 possible solutions to this problem. (Curious about how this will result in 100 points, lol, but okay). So then I drew up 
+a little table where the vertical are digits 0-9 and the horizontal is values of N. I only did N=1 and 2, but then the values in the table are the amount of 
+possibilities. So for N=1, it'll be 10, for N=2, it's 26, etc. And then with the values given from the examples, the next rows are calculated as the sums of the 
+previous ones I thiiiink. The maths is a little dodgy rn but I think I'm onto something, knock on wood. Let's see if this strategy works.
+
+It did work, but holy shit, read up on data structures before you use them!! I was so confused about how matrices work that I entirely fucked it up and hindered
+myself for SO long.
+
+ImportantTasks
+
+I'm not convinced I've fully thought through the intricacies of this problem, but my current method works for all the given ones. I'm going to sort each array
+in descending order, and then iterate through the tasks, effectively assigning them a computer if possible, counting all the tasks that have been allocated.
+
+Let's go!! I was right!!
+
+Also, I know the idea is to practice a lot throughout the week, and I think that's a really smart idea, but unfortunately due to the way this week is rolling
+for me, I just need to get as much done as possible. Sorry!!
+
+TimeTravellingCellar
+
+For this one, I was a bit confused about it, but I think I just want to find the biggest profit and smallest decay and find the biggest value possible. I'll
+need to make cases for the same cellar being both, but we will see. I think this one will be fine.
