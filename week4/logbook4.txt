@@ -1,0 +1,13 @@
+Week 4 Thursday
+
+MonstersValley2
+
+I've got a solid plan for this one I think. I'm going to use recursion, where there are two calls at each point, one for each choice (to bribe or to walk past).
+Then, there are two base cases: one where you attempt to walk past with less than the required dread (at which point it just returns), and one where you reach
+the end of the list of monsters. At that point, it checks whether the price tallied is smaller than the global variable price, and updates it if so. I also think I 
+only need to pass four variables: three ints and a char, so I don't think it's too taxing either? Obviously recursion will always have a bunch of stack frames,
+but at the very least it's only like 2^20 at max (oh dear). I am feeling really good about my abilities after the prac exam yesterday, so I'm hoping I just 
+breeze through this.
+
+It worked! The only issue was that I had the total party dread as an int, not a long, which meant eventaully they were negative values which mucked up all the
+arithmetic. But we got there with no fuss at ALL, goodness me!!
