@@ -2,22 +2,28 @@
 #define CHRISTMASTREE_HPP
 
 #include <vector>
+#include <iostream>
 using namespace std;
 
 class ChristmasTree {
     public:
     long countOfWays = 0;
-    vector<char> tree = {};
 
     long decorationWays(int N, int red, int green, int blue){
-        recursiveWays(N, red, green, blue);
+        countOfWays = 0;
+
+        recursiveWays(N, red - 1, green, blue, {}, 'r');
+        recursiveWays(N, red, green - 1, blue, {}, 'g');
+        recursiveWays(N, red, green, blue - 1, {}, 'b');
 
         return countOfWays;
     }
 
-    void recursiveWays(int N, int red, int green, int blue){
+    void recursiveWays(int N, int red, int green, int blue, vector<char> tree, char bauble){
 
-        if (red == 0 && green == 0 && blue == 0){
+        tree.push_back(bauble);
+
+        if (red < 0 || green < 0 || blue < 0){
             return;
         }
 
@@ -34,28 +40,15 @@ class ChristmasTree {
             }
         }
 
-        int redUsed = 0;
-        int greenUsed = 0;
-        int blueUsed = 0;
-        for (int i = 0; i < tree.size(); i++){
-            if (tree[i] == 'r'){
-                redUsed++;
-            }
-            if (tree[i] == 'g'){
-                greenUsed++;
-            }
-            if (tree[i] == 'b'){
-                blueUsed++;
-            }
-        }
-
         //check if this is the end of a row
         if (level != 0){
             //check if this latest row is valid
 
-            int redRowCount = 0;
-            int greenRowCount = 0;
-            int blueRowCount = 0;
+            long redRowCount = 0;
+            long greenRowCount = 0;
+            long blueRowCount = 0;
+
+            //seg fault here
             for (int i = tree.size() - level; i < tree.size(); i++){
                 if (tree[i] == 'r'){
                     redRowCount++;
@@ -101,19 +94,24 @@ class ChristmasTree {
             if (successfulRow == true && level == N){
                 countOfWays++;
             }
+
+        }
+
+        int sumRemaining = red + green + blue;
+        if (sumRemaining < 1){
+            return;
         }
 
         //call for using a red bauble next
-        tree.push_back('r');
-        recursiveWays(N, red - 1, green, blue);
+        recursiveWays(N, red - 1, green, blue, tree, 'r');
 
         //call for using a blue bauble next
-        tree.push_back('g');
-        recursiveWays(N, red, green - 1, blue);
+        recursiveWays(N, red, green - 1, blue, tree, 'g');
 
         //call for using a green bauble next
-        tree.push_back('b');
-        recursiveWays(N, red, green, blue - 1);
+        recursiveWays(N, red, green, blue - 1, tree, 'b');
+
+        return;
 
     }
 };

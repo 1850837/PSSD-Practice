@@ -25,3 +25,22 @@ This is a problem I looked at earlier and could not for the life of me work out 
 I had overcomplicated it entirely. What I actually need to do is just take it a single choice at a time, and call the function only for the next bauble, not
 the next row or next tree within the tree. I haven't written it up yet, but I have the plan in my notebook with the base cases (reaching n or having an invalid
 row), so fingers crossed this works. I plan on finishing this assignment up tonight (it has been a good few hours since StrangeComputer).
+I'm giving up on this for now. I've done this to the best of my current abilities, but I want to get to bed. I've got it working for all the test cases on my 
+machine, but I haven't gotten it to submit within the 600 seconds. I know there is some cleaning up I could do, but I am really struggling working out where
+the issues are. So I'm going to do some easier ones for now, and do this later.
+
+ExerciseMachine
+
+For this one, my plan is to calculate the number of seconds that we're given, and then divide it by 100 (or maybe 99?) and see how many times we get an int.
+I think this will work, but let's see.
+Woohoo! That worked!
+
+Arrows
+
+This is my "winding down" one. I really want to go to bed. I suspect my plan isn't great in terms of algorithm, but given that it took me a minute to remember
+the word algorithm, I think it's fine. Especially since s is max 50 chars. I'm just going to go once forwards and once backwards, measuring how long the 
+arrows are. If I don't get this first off it will be embarrassing.
+
+Week 3 Friday
+
+I feel asleep so I'm going back to this, and my plan was so half-baked lol. I think I need to sleep more.
