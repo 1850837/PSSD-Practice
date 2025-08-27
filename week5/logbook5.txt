@@ -30,3 +30,32 @@ different choice. I will also pass the currentCost, which I will add to each cal
 houses to paint. In the base case, I'll check the currentCost against a global variable that is the minimum cost (which ofc starts as int_max), and update it if
 the cost of this route was smaller. I think this should work? But I'm worried that, like the ChristmasTree one, I'm not going to be able to get it to run in a 
 reasonable amount of time. Hmm hmm hmm. (I will return to the ChristmasTree problem).
+
+I managed to get that working (despite a small and stupid error), but Cruz said there was a way to tabulate the answer instead of using recursion. Hmm, hmm, hmm.
+I'll think about it while working on other problems.
+
+RunLengthEncoding
+
+I'm doing some simpler ones now to wind down. For this, I think a simple loop will do it. For each character, we first check if it's a letter or a number. If 
+it's a letter, we simply add that letter to the result string and move on. If it's a number, I will probably use something like stringstream to extract the 
+entire number (i.e. if it's greater than 9 I need to handle that), and then extract the letter that follows it. I will put that letter into the result string
+as many times as required, and then iterate i (the looping variable) for as many times as needed, so that it effectively skips all the characters relating to 
+the thing I just did. Should be good? If I can work out how to count all that. Let's have a crack.
+
+RunLengthEncoding Reflection:
+I sadly only just noticed the thing about specifying whether it's design ideas, troubleshooting or reflecting, so I'm starting that now.
+This problem took longer than it needed to because I'm overtired, but my basic plan was fine. I just needed to read my own code and remember how strings worked.
+I do think it's slightly over-engineered, as I had a simplified version that didn't work, so I put in different parts more explicitely to work out the issue.
+If this were a larger project, I'd simplify it. As it stands, it works, and all is well.
+
+ElevatorLimit Design Ideas:
+I've had a look through this problem and I'm feeling pretty confident. My plan is to loop through the arrays given, subtracting the number in exit, then checking
+if that is a new minimum. Then I will add the number in enter, and check that for a new maximum. By the end I will have a number min and a number max. I will
+then use those to calculate the BigMin and BigMax asked of in the question (the naming is because I'm tired, lol). min + BigMin = 0, so BigMin = -min. If BigMin
+becomes a negative number, it will become 0. Then BigMax = lim - max, and if that is ever negative, we return an empty vector. Let's see how this goes!
+
+ElevatorLimit Reflection:
+I need to stop bloody coding when I'm tired. There were so, so many edge cases I missed. Ultimately it was easy to solve due to the wonderful gradescope 
+outputs (seriously, so many classes have shit outputs that are unhelpful as hell), but they were all things I should have noticed in reading the problem. Like 
+it the maximum number of people in the lift at one time is a negative number, then the maximum number of people who could have been in the lift at the start is
+just the physical limit. So on and so forth. But I got there, thank god, and I can put this away until next week.
