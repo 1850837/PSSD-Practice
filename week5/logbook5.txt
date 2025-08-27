@@ -1,0 +1,32 @@
+Week 5 Wednesday
+
+HouseBuilding
+
+Okay, I opened this question out of curiosity because I was interested in seeing how hard a 4-star problem would be, but I don't actually think this one is that hard?
+Famous last words. My plan is this: convert the given data into a vector of ints. Then, I will find the average of all the values in the vector. I will round this
+(I am a little uncertain here, I wish I had some more examples but oh well), and check both the pair of a & a+1, and a & a-1. In checking the pair, I will find the 
+difference between vector[i] and the closest of the two values to it. Then I will add all these up, and submit the smallest of these. I'm a bit worried about the
+way the averaging is going to work, but oh well. Let's give it a crack.
+
+After speaking to the tutor he suggested not doing this route. He implied something about how there are only 10 digits, and so there may be some we don't want to 
+change. I'm going to pivot slightly where instead of the average, I'm going to check which digit is most common, and check the cases around that (a,a+1 etc.). I
+do still need to think about cases where multiple values appear the same number of times. I think I'm just going to loop through and check all of them, that feels
+safest. Until I know the other test cases, I don't know that I can fully trust this.
+
+Okay turns out I didn't totally understand what the tutor said. Turns out, I was going about it in a bad way (who would have thought!). The key thing I didn't 
+notice was that if I have the counts of every time a particular digit appears, I can just increase them all at once by multiplying, instead of looping through
+the array of integers again. I was really hesitant to do an entire brute force thing because of the way I wanted to do it, so I was trying to figure out a pattern
+around which set of (i,i+1) would make it level with minimum effort, instead of finding a pretty good way to brute force it. Perhaps my nervousness around the 
+average thing should have been a clue I was going on the wrong path. I'm also not super happy with how long that took me (1.5 hours), but it was a 4-star problem
+so I'm going to cut myself a little bit of slack.
+
+RGBStreet
+
+This problem feels recursive to me. Although maybe I am overcomplicating it, hmm.
+
+What I want to do is have a recursive function that takes an element i (where in the list of strings we are), an int choice (the choice 1, 2, or 3), and maybe 
+something else I will figure out while I'm planning. I then want to call two functions at the end, for each of the two cases where the following house is painted a 
+different choice. I will also pass the currentCost, which I will add to each call. The base case will be i > string.size(), as this will mean there are no more
+houses to paint. In the base case, I'll check the currentCost against a global variable that is the minimum cost (which ofc starts as int_max), and update it if
+the cost of this route was smaller. I think this should work? But I'm worried that, like the ChristmasTree one, I'm not going to be able to get it to run in a 
+reasonable amount of time. Hmm hmm hmm. (I will return to the ChristmasTree problem).
