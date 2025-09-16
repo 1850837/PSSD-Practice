@@ -1,0 +1,59 @@
+Week 7 Friday
+
+GoodHours Design Ideas
+This one is my little warm up. I'm going to use a while loop to check through every time in between (inclusive) the two given times. Should be fairly simple, 
+but I need a warmup after skipping week 6 practice.
+
+GoodHours Reflection
+Thankfully that worked! I'm feeling a little warmed up.
+
+NiceOrUgly Design Ideas
+So I attempted this earlier but lost my work. Previously I had done recursion, but the largest case being fifty ?s wouldn't load in the allotted time. So, my 
+new plan is to check individual groups of three and five, and flag ugly or ugly? appropriately. Then at the end, if the only ugly cases require ?, then it's
+nice, maybe. Ahhh shit I've figured out a case where that doesn't work, which was the EE?FFFF case. Hmm, shit. Maybe I put extra cases to check before deciding
+nice? Like working out if the ? is between two vowels and four consonants. Let's try that.
+
+NiceOrUgly Reflection
+This worked! There were a lot of edgecases I didn't remember, but simplifying every string into 'c's, 'v's and '?'s really helped me grasp the patterns that 
+weren't being picked up. I think that's a really interesting thing I didn't notice about planning these? Like, simplifying what's actually going on, especially
+in a word question really helps. That said, I'd like my damn bonus points thanks very much.
+
+CountExpressions
+This one I've taken some time to ponder. I'm not going to do this accurately or well, but I am very tired and want to just get it done. The way I see it is this:
+there are 12 combinations of a,b,c,d, and 21 combinations of operations, so for any set of inputs for this question, there are 252 possible combinations. 
+From those, they need to be culled in two stages: those that equate to val, and those that are the same. I think I might use the vector unique function? Or 
+loop through the vector every time a result is calculated. I am sure there's a wonderful and lovely tabulation to do this, but I can't think through that so 
+I'm going to recursion it, sorry. It definitely isn't the best way to do this, though.
+
+BlackAndWhiteSolitaire Design Ideas
+I think I've fucked it and am moving on for now, I'm too tired. So we're doing this one. I think the way I want to do it is to loop through twice, the first 
+leaving the first el
+
+Week 8 Tuesday
+
+BlackAndWhiteSolitaire Design Ideas
+We're back, hopefully refreshed and able to do this better. I'm not entirely sure my plan is fullproof, but it works with the given examples. I want to do 
+one pass through the string, counting and changing the relevant cards, and then I want to do a second pass but swapping the first element. I'll count the 
+number of changes in each, and return the smaller of the two values. Let's go.
+
+BlackAndWhiteSolitaire Reflection
+In one! The only debugging I needed to do was with the given examples, because I didn't add a count for my second pass. Excellent.
+
+ColourfulRabbits Design Ideas
+Okay, this I think I have a really solid idea for. I don't want to do a bunch of looping through the same array again, so my plan is this: there will be an
+unordered map which holds key-value pairs where the key is the value in the array, and the value is the number of rabbits that remain that could be in that 
+coloured set. Then when we loop through the array, we either add the key to the map and add to the counter, or decrease the value to that key by one, or
+if the value is 0 add the key to the value and add the key to the counter. This works with all the given examples, even if I haven't explained it well. Let's
+see if I can code it!
+
+ColourfulRabbits Reflection
+GOD I'm a legend. NO debugging required. This whole 'thinking before you code' thing is so awesome, actually.
+
+CountExpressions Design Ideas
+This one I'm still a little nervous about, but I think it might be okay? As I worked out before, there are only 252 combinations, which does lend itself to 
+tabulation, but I don't know I can work out properly how to do that. So recursion it is. Let's see if I can make this work.
+
+CountExpressions Reflection
+The design worked! I had to do a bit of troubleshooting since I was hit badly but forgetting to account by negative numbers. I'm not happy with forgetting that
+those existed, but I found a waaay simpler solution (passing vectors of the numbers and operators used), and am proud of how well I actually coded today? There
+wasn't anything stupid where I forgot how the actual code worked. Phew.
