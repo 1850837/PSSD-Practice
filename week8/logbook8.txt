@@ -1,0 +1,57 @@
+Thursday Week 8
+
+CorporationSalary Design ideas
+I'm worried that it's ultimately going to be a long, but I think just making this by looping through a zillion times should be fine since there's only 50 
+employees? Let's see.
+
+CorporationSalary Reflection
+Sometimes you're just a fucking legend. Idk what to say.
+Nah, but worth not getting scared about longs. I had the idea, I backed down, got scared for a while, then looked at the restraints and realised I was scared for 
+no reason. The things I've ruled out the second I see a long, without checking if it's actually a limitation of the problem. I think I got spooked by the 
+prac exam yesterday, where I missed the fact that it was longs and used brute-force.
+
+Sunday Week 8
+
+Thimbles Design Ideas 
+I'm starting again with an easier one as it has been a massive week. For this I'm just gonna loop through the array and work out if the current element is there,
+and if so, change current to the other one. Should work? I think?
+
+Thimbles Reflection
+I think maybe I chose a problem that was too easy.
+
+HandsShaking Design Ideas
+So this one took me a while to work out. I struggled understanding the examples but I think I've done it, and posited that I think n=6 results in 5. With this,
+and given that it expects a long, I knew counting solutions would be stupid, and I'm not even sure where to begin on that, so I thought about exponential functions?
+This isn't really something that's come up in the course, but I've been patchy attendance-wise so maybe it has. I thiiiink I can use an exponential function
+to calculate this though. Let's see!
+
+HandsShaking Problem Solving
+Okay I know it looks like I'm just redesigning it to match the very next failed test, but I am so, so sure that there is a correct exponential function for 
+this, if I can just get enough data. If I don't get it by n=20 I'll figure out something else but I'm so certain this will work.
+Okay so at n=16, my lovely exponential function is starting to really fall apart, so I think this is wrong. I'm keen to explore some different functions, but
+I will chill on this and figure out a better idea soon. They're still really close! Just rounding a bit wrong.
+
+Okay I used AI and figured out that there is a mathematical way to do this, which I did believe since it is a problem with a single input and single output.
+But I was super set on it being some sort of function, which I suppose this is, but it's more of a tabulation situation, which I couldn't quite grasp.
+
+Sunday Holiday Week 1
+
+HandsShaking Reflection
+
+It's probably other life stress but this one was really hard for me. I got it working on my machine, but because of a weird seg fault, I wasn't getting any 
+gradescope output at all. It frustrated me to the point where I put this down entirely for a week, which was not my plan. Without the output I didn't know how
+to be sure I had it working for input values close to 50, so I was really frustrated. The seg fault was showing up only for an input value of 50, but also only 
+when I had a main function with other test cases. If the main was just countPerfect(50), it ran fine. I also could get the seg fault to vanish if I had some 
+printing values happening in the function. Eventually I tried to change it from returning the values in the array to the value in 'current', and extended the 
+array by 1 in case that was where the seg fault was coming from, but again, neither of those should cause a conditional seg fault. It worked, and I'm moving on,
+but god I didn't need that. Just one more problem left.
+
+RockStar Design Ideas
+My instinct, as per usual, is to do recursion where it doesn't make sense to do it. I ultimately decided that it was a stupid idea, given the number of possible
+outcomes and therefore stack frames needed for four inputs all size of ints. Now obviously it's not longs, but even the concept of using recursion for something
+where each input was in the hundreds just gave me shudders. So instead I have made a rough mathematical one based on which values are zeroes. I wish we got given
+more examples to be sure that what my plan is is correct, but the only way I'm gonna get more examples is by submitting to gradescope. Let's have a crack.
+
+RockStar Reflection
+I should use maths more often. I think whenever there are a bunch of number inputs I need to think about a mathematical approach first, rather than recursion.
+Glad this week's stuff is over.
