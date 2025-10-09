@@ -1,0 +1,78 @@
+Week 9 Tuesday
+
+ErdosNumber Design Ideas
+
+Okay, so I've been sick and didn't attend the lecture today, so I don't aaaactually know how graphs work besides what I know from tutoring year 12 general maths,
+BUT, I've got an idea:
+I'm essentially going to have an initial run through the input array looking for Erdos and putting Erdos and any other elements related into a finale array. I'll
+pop any finished elements. Then, I'll use a while loop with the condition of the input array having a size greater than 0, and essentially do the same thing
+but not Erdos-specific. I think this should work!! Let's see.
+
+Week 9 Wednesday
+
+CatGame Design Ideas
+
+I'm having trouble making the ErdosNumber problem, so I'm going to do an easier one for warm-up before getting into it properly. This CatGame one I think I 
+have sorted maybe? I basically am going to find the average of all the elements in the array, and make every element move n towards that average. The examples
+all work with this, fingers crossed. Let's see if this works.
+
+CatGame Reflection
+
+I got really lost in the sauce of this one, but ultimately realised that I needed to check each position of that "average" that I was using in the previous 
+idea. I also, as usual, briefly tried recursion, but this is definitely a better way to do it. Essentially I sorted the array, and then made all of them go 
+left, and then one by one moved the items right, checking the difference as I go.
+
+ErdosNumber Design Ideas
+
+I've got a better idea. I want to have a variable for whatever current author I'm using, beginning with Erdos, and a variable for that author's number. 
+Then I will loop through the list of publications, tokenising each element and checking if the current author is present. If it is, then each of the other 
+authors, plus the number+1, will be pushed onto the final vector. Then, that publication will be turned to "-1", and filtered out on future counts. Whenever
+"-1" is encountered, I'll have a counter, and the looping will end when either I run out of authors, or when the counter is equal to the size of the array.
+Then I'll sort the array, and then return the array. I thiiiink this is a good enough plan.
+
+Week 9 Thursday
+
+ErdosNumber Reflection
+
+I think before I begin I need to list edge cases. I was so stumped for cases where the number was greater than 9, or when an author would be in two publications
+that were taken out in the same phase. Otherwise, I wasn't getting caught out by my own programming, I was being caught out by a lack of planning. Everything
+I encountered was a new case I hadn't considered. Let's try and plan in future.
+
+CubeStickers Design Ideas
+
+I've got a plan where, since you can have a max of two stickers of the same colour on the cube, there are several specific possibilities here for "YES" answers.
+The cases are:
+- 3 colours with two or more stickers in each
+- 4 colours where at least two have two or more stickers in each
+- 5 colours where at least one has two or more stickers
+- 6 colours or more
+Otherwise, it's not possible. I'm going to use an unordered map to count it out. Let's see if I've thought through this enough!
+
+CubeStickers Reflection
+
+The only issue was a minor error I made where the "break" statement wasn't where it was supposed to be for the 5 colours case, causing some issues. But, 
+an easy fix and an easy thing to work out, and the planning worked!!
+
+CellRemoval Design Ideas
+
+I actually looked at this before looking at CubeStickers but decided to come back to it because it looked overwhelming. However, I think I've figured out 
+how to navigate this one.
+I think the end points, or the final cells, are the elements whose i is not present in the array itself. Then, I think we can create some vector of elements 
+to be deleted (with the elements corresponding to the i's of the parent vector), starting with the deletedCell we're given and then going onto any i whose 
+element is equal to deletedCell (or any added value). Then you loop through the array until no further changes are made. After that, I'll create a version 
+of the cell vector without anything in the array of dead cells, and then count up the final cells from that. Fingers crossed this works? It seems to for 
+all the examples.
+
+SimpleDuplicateRemover Design Ideas
+
+I actually found out I don't know anything or understand the CellRemoval problem at all, so I'm giving up and moving on. I'd love this cold to go away so I can
+have my brain back.
+
+My plan for this one is as follows:
+Have a vector of a 1000 elements, all 0. Go from right to left through sequences, incrementing elements of a each time, for instance, if sequence[5] = 10, then
+a[9]++ (10-1). Each time, we'll check if a[9] or whatever is >1, and if so, change sequence[5]=-1. Then, when all is done, I'll make a final vector out of 
+any non--1 element, and return that.
+
+SimpleDuplicateRemover Reflection
+
+Not a bit of debugging required! Excellent excellent excellent, what a joy. This whole planning thing, gosh.

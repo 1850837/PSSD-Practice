@@ -1,0 +1,29 @@
+Week 8 Wednesday
+
+MinimumDifference Design Ideas
+My plan for this is to loop through all the numbers, check if the absolute value of the difference of the two absolutesums is smaller than the previous one, and
+save the number it came from. This should work I think? Perhaps not the most optimal solution, but good enough for right now.
+
+MinimumDifference Reflection
+Turns out it was called 'MinimalDifference', whoops. Anyway yeah that worked, yippee!
+
+VeryInterestingMovie Design Ideas
+My plan for this is to go row by row. I think for each row, just alternating is the optimal solution? We'll see. I haven't explained it very well but I have a 
+well-defined idea in my head.
+
+VeryInterestingMovie Reflection
+Legends say, a hero who got enough sleep could code something perfectly on the first try. The legends were right.
+
+FairWorkload Design Ideas
+Okay, this one confused me for a while. It feels like the specific idea isn't well defined? Like I'm not sure what quantifies a "correct" answer, as much as 
+just being "more correct" than every other answer. So then why does that one example have 25 possible solutions? Anyway.
+My plan is this: I'm going to have a vector of integers with the number of elements being the number of workers. Ultimately, the answer will be whichever of 
+these elements is the largest.
+I'm going to then go through the array of folders, and one by one consider the current value of the "pile" and the current value plus the folder value. Whichever
+is closer to the average is what happens. If it's the latter, we add the value and move on. If it's the former, we don't add it and instead add it to the 
+next "pile". I thiiiink this should be fine? I'm sure there are ways for it to not work, but I am going to give this a crack.
+
+FairWorkload Reflection
+I'm giving up on this one. I've passed 76 of the test cases, but when looking at the failed test case, it's working exactly as I intended, I just don't understand
+why it's not a 'correct' answer. So whatever, moving on.
+

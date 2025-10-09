@@ -58,6 +58,9 @@
         "text_encoding": "cpp",
         "cinttypes": "cpp",
         "variant": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "bitset": "cpp",
+        "regex": "cpp",
+        "unordered_set": "cpp"
     }
 }
