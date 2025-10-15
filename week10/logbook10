@@ -1,0 +1,45 @@
+DifferentStrings Design Ideas
+
+I'm doing this as a fun little warm-up problem. I'm going to have a for-loop that iterates from 0 to B.size() - A.size(), so that I check every possibility
+for where A could fall in B. Then I'll check each char in A and B, and when they don't match, I'll add to a counter. If the counter is smaller than the min, 
+we update the min. Then we return the min. I reckon this should work.
+
+Week 10 Wednesday
+
+DifferentStrings Reflection
+
+I think that was a good warmup. I'm gonna ramp up with two three-star ones before moving onto the four-star week 10 special.
+
+BigBurger Design Ideas
+
+My plan for this is that I want to create an array of leaving times, and use that to find the wait times. The wait times will be calculated as the start time
+for that element minus the leaving time of the element before. The leaving time (with the exception of the first element), will be calculated as max(leaving[i-1],
+arrival[i]) + service[i]. There will be a special case for a single element, as that will always be 0. Let's see how we go!
+
+BigBurger Reflection
+
+The only issue I had was that I had the numbers backwards for the wait time. It should be the leaving time of the element before minus the start time, whoops.
+But otherwise, all's worked out and I'm feeling pretty good!
+
+BridgeSort Design Ideas
+
+This one is a little vaguer for me. The plan is that I will make four strings, all "NNNNNNNNNNNNN". Then, for each club, I will update the specific elements
+to their relevant numbers if they are present. Then, I will create a string and push all the elements onto that where it's not "N". Let's see if this works!
+
+BridgeSort Reflection
+
+Yeah look, it wasn't elegant. Not elegant at all. But it does work! I really am struggling to work out how that could have been better, but then my brain isn't
+fully working at the moment. So it working first try is real nice!
+
+BlockEnemy Design Ideas
+
+I was really struggling with this one so I confess that I did use AI to create an idea. I figured I could use a matrix representation and find something with 
+matrix multiplication to check if we'd cleared all connections between connected towns, but the AI helped me realise that I had entirely missed the fact 
+that each town has only one path to any other town. This makes it a tree structure which is much easier to manage, as otherwise I was fretting terribly 
+about how to manage all the possibilities.
+
+BlockEnemy Reflection
+
+That took so long and I can barely articulate what I did. I want to have more to say about all this and what I did, but ultimately I think it's just that I need
+to sleep more? I'm really glad though that once I got the given testcases working that it worked for all of them. Overall quite a lucky week for me. But yeah 
+no unfortunately I think I just need to look after myself better if I'm going to program properly.
